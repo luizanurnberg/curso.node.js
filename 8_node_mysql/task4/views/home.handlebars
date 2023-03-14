@@ -1,0 +1,19 @@
+<h1>Registro de Alunos</h1>
+<form action="/students/insertstudent" method="post">
+    <div class="form-control">
+        <label for="name">Aluno: </label>
+        <input id="inputStudent" type="text" name="studentName" placeholder="Digite o nome do aluno" />
+    </div>
+
+    <div class="form-control">
+        <label for="class">Turma: </label>
+        <input id="inputClass" type="number" name="studentClass" placeholder="Digite a turma do aluno" />
+    </div>
+
+    <input type="submit" id="inputSubmitRegister" value="Cadastrar" />
+</form>
+
+<div class="form-search">
+    <p>Ou</p>
+    <a href="/students"><input id="inputAllStudents" type="submit" value="Consultar todos os alunos" /></a>
+</div>

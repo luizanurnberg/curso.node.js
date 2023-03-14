@@ -1,0 +1,13 @@
+<h1>Alunos cadastrados</h1>
+<div class="students-container">
+    {{#each student}}
+    <div class="link-students">
+        <a id="link" href="/students/{{this.id}}">#{{this.id}} - <span class="bold">{{this.studentName}}</span> - turma:
+            {{this.studentClass}}</a>
+    </div>
+    {{/each}}
+
+    <div class="go-back">
+        <a href="/"><input id="inputNewStudent" type="submit" value="Voltar" /></a>
+    </div>
+</div>

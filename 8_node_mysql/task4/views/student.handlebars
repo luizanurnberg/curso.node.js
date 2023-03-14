@@ -1,0 +1,14 @@
+<div id="student-register">
+    <div class="container">
+        <h1>{{student.studentName}}</h1>
+        <p>Turma: {{student.studentClass}}</p>
+    </div>
+    <div class="removal-control">
+        <form action="/students/removestudent/{{student.id}}" method="post">
+            <input id="inputRemove" type="submit" value="Remover o aluno" />
+        </form>
+    </div>
+    <div class="go-back">
+        <a href="/students"><input id="inputNewStudent" type="submit" value="Voltar" /></a>
+    </div>
+</div>
